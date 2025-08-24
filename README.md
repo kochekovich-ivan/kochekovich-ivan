@@ -1,35 +1,30 @@
-# Hi, I'm Ivan 👋
+# Hi, I'm Ivan Kochekovych
 
-🚀 Aspiring Quant & Software Engineer | MIT hopeful  
-💻 C++ | Python (ML/Finance) | Algorithms | Math  
+ Aspiring Quant & Software Engineer | MIT hopeful  
+ Focus: C++ • Python (ML/Finance) • Algorithms • Math  
 
-## 🔹 Current Focus
+---
+
+## Current Focus
 - Building projects in **C++ and Python**  
-- Learning **Machine Learning & Finance**  
-- Following a **3-year roadmap** (156 weeks) towards MIT and Quant career  
+- Studying **Machine Learning & Financial Engineering**  
+- Following a **3-year roadmap** (156 weeks) toward MIT & Quant career  
 
-## 🔹 Featured Projects
-- [HFT Trading Simulator](https://github.com/kochekovich-ivan/hft-trading-simulator)
-- [Deep Learning for Finance](https://github.com/kochekovich-ivan/deep-learning-for-finance)
-- [Portfolio Optimization](https://github.com/kochekovich-ivan/portfolio-optimization)
+---
 
-## 🔹 About Me
-Originally from Ukraine 🇺🇦 | Now based in Norway 🇳🇴  
-Open to collaborations, research projects, and finance/ML internships.  
+## Featured Projects
+- [HFT Trading Simulator](https://github.com/kochekovich-ivan/hft-trading-simulator) — simulating market microstructure & strategies  
+- [Deep Learning for Finance](https://github.com/kochekovich-ivan/deep-learning-for-finance) — PyTorch models for time-series forecasting  
+- [Portfolio Optimization](https://github.com/kochekovich-ivan/portfolio-optimization) — modern portfolio theory & risk management  
 
-📫 Reach me: [Email](kochekovychivan@gmail.com)
+---
 
-<!--
-**kochekovich-ivan/kochekovich-ivan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## About Me
+Originally from **Ukraine 🇺🇦**, now based in **Norway 🇳🇴**.  
+I’m passionate about applying math, algorithms, and ML to solve real problems in finance.  
+Open to collaborations, research, and quant internships.  
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+ **Contact:**  
+- [Email](mailto:kochekovychivan@gmail.com)  
