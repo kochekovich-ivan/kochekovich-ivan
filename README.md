@@ -8,7 +8,7 @@
 ## Current Focus
 - Building projects in **C++ and Python**  
 - Studying **Machine Learning & Financial Engineering**  
-- Following a **3-year roadmap** (156 weeks) toward MIT & Quant career  
+- Following a **roadmap** toward MIT & Quant career  
 
 ---
 
