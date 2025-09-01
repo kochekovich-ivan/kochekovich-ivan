@@ -1,44 +1,81 @@
-# Linear Algebra: Matrix Basics
+# Linear Algebra: Week 1 Notes
 
-A matrix is a rectangular array of numbers arranged in rows and columns.
+## Vectors
 
-Example of a 2×3 (2 rows, 3 columns) matrix:
-!\[\[{F62851ED-4468-474A-84BF-0D3C8F3EDBEA}.png]]
-Each entry is referred to by its row and column index.
+### Perspectives on Vectors
+
+1. **Physics Perspective**: Vectors are arrows in space. Defined by **length** and **direction**. Moving the vector without changing these properties keeps it the same.
+2. **Computer Science Perspective**: Vectors are **ordered lists of numbers**. Example: a house represented as `[square footage, price]`.
+3. **Mathematics Perspective**: Vectors are objects where **vector addition** and **scalar multiplication** are defined. Vectors start from the origin.
+
+### Vector Coordinates
+
+- 2D vector `[x, y]`: x = movement along x-axis, y = movement along y-axis.
+- 3D vector `[x, y, z]`: z = movement along the z-axis, perpendicular to x and y.
+
+### Vector Operations
+
+1. **Addition**: Tip-to-tail method or coordinate-wise addition.  
+   Example: `[1, 2] + [3, -1] = [4, 1]`
+2. **Scalar Multiplication**: Multiply each component by a number.  
+   - Positive number: stretch
+   - Fraction: shrink
+   - Negative: reverse direction and scale
 
 ---
+
+## Matrices
+
+### Definition
+
+A matrix is a **rectangular array of numbers** arranged in rows and columns.
+
+Example of a 2x3 matrix:
+
+[ a11 a12 a13 ]
+[ a21 a22 a23 ]
+
 
 ### Matrix Addition
 
-You can add two matrices only if they have the same shape.
-The result is obtained by adding corresponding elements.
-!\[\[{265218FD-A625-4D43-BE14-E3EFF6517850}.png]]
+- Only possible if matrices have the **same shape**.
+- Add corresponding elements.
+
+[1 2] [5 6] [6 8]
+[3 4] + [7 8] = [10 12]
+
 
 ### Scalar Multiplication
 
-Multiplying a matrix by a scalar means multiplying every element by that number.
-!\[\[{018D1195-F06F-499F-B875-161F19C06353}.png]]
+- Multiply every element by a scalar.
 
----
+2 * [1 2] = [2 4]
+[3 4] [6 8]
+
 
 ### Matrix Multiplication
 
-Defined if the **number of columns** of the first matrix equals the **number of rows** of the second.
-Multiply rows of the first by columns of the second (dot product).
-!\[\[{226B1D86-AF33-4B79-9057-A900B03746CC}.png]]
+- Number of **columns of first matrix** = number of **rows of second matrix**.
+- Multiply rows by columns (dot product).
 
----
+[1 2] [5 6 7] [15+28 16+29 17+210]
+[3 4] * [8 9 10] = [35+48 36+49 37+410]
+
 
 ### Special Matrices
 
-**Zero matrix**: all entries are zero.
-**Identity matrix**​: square matrix with 1’s on the main diagonal, 0’s elsewhere.
-!\[\[{18A2ED27-02D3-46D3-BD13-518B45A74541}.png]]
+- **Zero matrix**: all entries are 0
+- **Identity matrix**: square matrix with 1's on the diagonal, 0's elsewhere
 
----
+[1 0 0]
+[0 1 0]
+[0 0 1]
+
 
 ### Transpose
 
-Flips a matrix over its diagonal (rows become columns).
-!\[\[{93CE26D6-FBA5-41F3-9070-C3634E6F444A}.png]]
+- Flips a matrix over its diagonal (rows become columns)
 
+[1 2 3]ᵀ = [1 0]
+[0 4 5] [2 4]
+[3 5]
