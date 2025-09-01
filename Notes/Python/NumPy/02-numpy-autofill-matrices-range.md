@@ -16,9 +16,9 @@ If we want to create an array with 10 zeros, we can simply write:
 
 
 
-`a = np.array(\[0] \* 10)   # array of 10 zeros`
+`a = np.array(\\\[0] \\\* 10)   # array of 10 zeros`
 
-`b = np.array(\[1] \* 15)   # array of 15 ones`
+`b = np.array(\\\[1] \\\* 15)   # array of 15 ones`
 
 
 
@@ -44,11 +44,11 @@ But NumPy provides faster and more convenient methods:
 
 Example:
 
-`zeros\_arr = np.zeros(10)`             # \[0. 0. 0. ...]
+`zeros\\\_arr = np.zeros(10)`             # \[0. 0. 0. ...]
 
-`ones\_arr = np.ones((3, 3), int)`      # 3x3 matrix of ones
+`ones\\\_arr = np.ones((3, 3), int)`      # 3x3 matrix of ones
 
-`full\_arr = np.full((2, 5), 7)`        # 2x5 matrix filled with 7
+`full\\\_arr = np.full((2, 5), 7)`        # 2x5 matrix filled with 7
 
 
 
@@ -76,7 +76,7 @@ Example:
 
 `I = np.eye(4)        # 4x4 identity matrix`
 
-`D = np.diag(\[1, 2, 3])`
+`D = np.diag(\\\[1, 2, 3])`
 
 
 
@@ -106,11 +106,11 @@ np.geomspace(start, stop, num) → values spaced on a geometric scale.
 
 Example:
 
-`a = np.arange(0, 10, 2)       # \[0 2 4 6 8]`
+`a = np.arange(0, 10, 2)       # \\\[0 2 4 6 8]`
 
-`b = np.linspace(0, 1, 5)      # \[0. 0.25 0.5 0.75 1.]`
+`b = np.linspace(0, 1, 5)      # \\\[0. 0.25 0.5 0.75 1.]`
 
-`c = np.logspace(1, 3, 3)      # \[10. 100. 1000.]`
+`c = np.logspace(1, 3, 3)      # \\\[10. 100. 1000.]`
 
 
 
@@ -163,8 +163,4 @@ np.fromiter(iterable, dtype) → create array from iterable.
 
 
 np.loadtxt(file), np.fromfile() → load data from file.
-
-
-
-
 

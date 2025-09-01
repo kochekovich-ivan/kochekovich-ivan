@@ -40,11 +40,11 @@ but have slower access to elements (need to traverse).
 
 `struct Node {`
 
-&nbsp;   `int data;`
+    `int data;`
 
-&nbsp;   `Node\* next;`
+    `Node\\\* next;`
 
-&nbsp;   `Node(int value) : data(value), next(nullptr) {}`
+    `Node(int value) : data(value), next(nullptr) {}`
 
 `};`
 
@@ -56,23 +56,23 @@ but have slower access to elements (need to traverse).
 
 `private:`
 
-&nbsp;   `Node\* head = nullptr;`
+    `Node\\\* head = nullptr;`
 
-&nbsp;   `Node\* tail = nullptr;`
+    `Node\\\* tail = nullptr;`
 
-&nbsp;   `unsigned int counter{0};`
+    `unsigned int counter{0};`
 
 
 
 `public:`
 
-&nbsp;   `void push\_back(int value);     // add element to the end`
+    `void push\\\_back(int value);     // add element to the end`
 
-&nbsp;   `void print\_all\_el();           // print all elements`
+    `void print\\\_all\\\_el();           // print all elements`
 
-&nbsp;   `unsigned int size();           // return size`
+    `unsigned int size();           // return size`
 
-&nbsp;   `~LinkedList();                 // destructor to free memory`
+    `~LinkedList();                 // destructor to free memory`
 
 `};`
 
@@ -101,27 +101,17 @@ size() – returns the number of elements.
 \# Example usage
 `int main() {`
 
-&nbsp;   `LinkedList my\_list;`
+    `LinkedList my\\\_list;`
 
-&nbsp;   `my\_list.push\_back(10);`
+    `my\\\_list.push\\\_back(10);`
 
-&nbsp;   `my\_list.push\_back(15);`
+    `my\\\_list.push\\\_back(15);`
 
-&nbsp;   `my\_list.print\_all\_el();   // Output: 10 15`
+    `my\\\_list.print\\\_all\\\_el();   // Output: 10 15`
 
-&nbsp;   `cout << my\_list.size();   // Output: 2`
+    `cout << my\\\_list.size();   // Output: 2`
 
-&nbsp;   `return 0;`
+    `return 0;`
 
 `}`
-
-
-
-
-
-
-
-
-
-
 

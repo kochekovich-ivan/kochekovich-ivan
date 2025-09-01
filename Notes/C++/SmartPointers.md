@@ -14,19 +14,19 @@ Unlike raw pointers, smart pointers:
 
 
 
-&nbsp;   Automatically delete the managed object when it goes out of scope.
+    Automatically delete the managed object when it goes out of scope.
 
 
 
-&nbsp;   Clearly express ownership semantics in code.
+    Clearly express ownership semantics in code.
 
 
 
-&nbsp;   Reduce the need for manual delete calls.
+    Reduce the need for manual delete calls.
 
 
 
-&nbsp;   Can be safely copied or moved depending on the type.
+    Can be safely copied or moved depending on the type.
 
 
 
@@ -34,15 +34,15 @@ Unlike raw pointers, smart pointers:
 
 
 
-&nbsp;   std::unique\_ptr – Exclusive ownership, cannot be copied, only moved.
+    std::unique\_ptr – Exclusive ownership, cannot be copied, only moved.
 
 
 
-&nbsp;   std::shared\_ptr – Shared ownership, reference-counted.
+    std::shared\_ptr – Shared ownership, reference-counted.
 
 
 
-&nbsp;   std::weak\_ptr – Non-owning reference to an object managed by std::shared\_ptr.
+    std::weak\_ptr – Non-owning reference to an object managed by std::shared\_ptr.
 
 
 
@@ -60,11 +60,11 @@ Example: std::unique\_ptr
 
 `public:`
 
-&nbsp;   `MyClass() { std::cout << "Constructor\\n"; }`
+    `MyClass() { std::cout << "Constructor\\\\n"; }`
 
-&nbsp;   `~MyClass() { std::cout << "Destructor\\n"; }`
+    `~MyClass() { std::cout << "Destructor\\\\n"; }`
 
-&nbsp;   `void sayHello() { std::cout << "Hello from MyClass!\\n"; }`
+    `void sayHello() { std::cout << "Hello from MyClass!\\\\n"; }`
 
 `};`
 
@@ -72,15 +72,15 @@ Example: std::unique\_ptr
 
 `int main() {`
 
-&nbsp;   `std::unique\_ptr<MyClass> ptr = std::make\_unique<MyClass>();`
+    `std::unique\\\_ptr<MyClass> ptr = std::make\\\_unique<MyClass>();`
 
-&nbsp;   `ptr->sayHello();`
+    `ptr->sayHello();`
 
 
 
-&nbsp;   // No need to manually delete — destructor is called automatically
+    // No need to manually delete — destructor is called automatically
 
-&nbsp;   `return 0;`
+    `return 0;`
 
 `}`
 
@@ -112,9 +112,9 @@ Destructor
 
 `    int value;`
 
-`    std::shared\_ptr<Node> next;`
+`    std::shared\\\_ptr<Node> next;`
 
-`    std::weak\_ptr<Node> prev; // prevents cyclic reference`
+`    std::weak\\\_ptr<Node> prev; // prevents cyclic reference`
 
 
 
@@ -126,21 +126,21 @@ Destructor
 
 `int main() {`
 
-&nbsp;`   auto node1 = std::make\_shared<Node>(1);`
+ `   auto node1 = std::make\\\_shared<Node>(1);`
 
-&nbsp; `  auto node2 = std::make\_shared<Node>(2);`
+  `  auto node2 = std::make\\\_shared<Node>(2);`
 
 
 
 `    node1->next = node2;`
 
-&nbsp;`   node2->prev = node1; // weak\_ptr avoids memory leak`
+ `   node2->prev = node1; // weak\\\_ptr avoids memory leak`
 
 
 
-`    std::cout << "Node1 value: " << node1->value << "\\n";`
+`    std::cout << "Node1 value: " << node1->value << "\\\\n";`
 
-&nbsp;`   std::cout << "Node2 value: " << node2->value << "\\n";`
+ `   std::cout << "Node2 value: " << node2->value << "\\\\n";`
 
 `}`
 
@@ -150,19 +150,19 @@ Destructor
 
 
 
-&nbsp;   std::unique\_ptr → sole ownership, lightweight, best for exclusive resources.
+    std::unique\_ptr → sole ownership, lightweight, best for exclusive resources.
 
 
 
-&nbsp;   std::shared\_ptr → multiple owners, uses reference counting.
+    std::shared\_ptr → multiple owners, uses reference counting.
 
 
 
-&nbsp;   std::weak\_ptr → observes a shared\_ptr without affecting its lifetime.
+    std::weak\_ptr → observes a shared\_ptr without affecting its lifetime.
 
 
 
-&nbsp;   Prefer std::make\_unique / std::make\_shared over new for exception safety.
+    Prefer std::make\_unique / std::make\_shared over new for exception safety.
 
 
 
@@ -172,19 +172,15 @@ Destructor
 
 `int main() {`
 
-&nbsp;   `auto uptr = std::make\_unique<int>(42);   // unique\_ptr`
+    `auto uptr = std::make\\\_unique<int>(42);   // unique\\\_ptr`
 
-&nbsp;   `auto sptr = std::make\_shared<int>(100);  // shared\_ptr`
+    `auto sptr = std::make\\\_shared<int>(100);  // shared\\\_ptr`
 
-&nbsp;   `std::weak\_ptr<int> wptr = sptr;          // weak\_ptr`
+    `std::weak\\\_ptr<int> wptr = sptr;          // weak\\\_ptr`
 
 
 
-&nbsp;   `std::cout << \*uptr << " " << \*sptr << "\\n"; // Output: 42 100`
+    `std::cout << \\\*uptr << " " << \\\*sptr << "\\\\n"; // Output: 42 100`
 
 `}`
-
-
-
-
 
