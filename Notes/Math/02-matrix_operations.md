@@ -1,27 +1,3 @@
-## Vectors
-
-### Perspectives on Vectors
-
-1. **Physics Perspective**: Vectors are arrows in space. Defined by **length** and **direction**. Moving the vector without changing these properties keeps it the same.
-2. **Computer Science Perspective**: Vectors are **ordered lists of numbers**. Example: a house represented as `[square footage, price]`.
-3. **Mathematics Perspective**: Vectors are objects where **vector addition** and **scalar multiplication** are defined. Vectors start from the origin.
-
-### Vector Coordinates
-
-- 2D vector `[x, y]`: x = movement along x-axis, y = movement along y-axis.
-- 3D vector `[x, y, z]`: z = movement along the z-axis, perpendicular to x and y.
-
-### Vector Operations
-
-1. **Addition**: Tip-to-tail method or coordinate-wise addition.  
-   Example: `[1, 2] + [3, -1] = [4, 1]`
-2. **Scalar Multiplication**: Multiply each component by a number.  
-   - Positive number: stretch
-   - Fraction: shrink
-   - Negative: reverse direction and scale
-
----
-
 ## Matrices
 
 ### Definition
