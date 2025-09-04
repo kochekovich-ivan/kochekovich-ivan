@@ -1,5 +1,3 @@
-# Linear Algebra: Week 1 Notes
-
 ## Vectors
 
 ### Perspectives on Vectors
