@@ -1,7 +1,3 @@
-# Finance: Asset Classes (Stocks, Bonds, ETFs)
-
----
-
 ## 1. Stocks
 
 Definition: A share of ownership in a company. Owning a stock means owning a fraction of that business.
