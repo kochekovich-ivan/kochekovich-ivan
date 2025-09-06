@@ -12,12 +12,14 @@
 ---
 
 ## 3. 2D Formula
-For matrix  
-\[
-\begin{pmatrix} a & b \\ c & d \end{pmatrix}
-\]  
-determinant = **ad − bc**.  
-Represents the signed area of the parallelogram formed by its column vectors.
+For a 2×2 matrix:
+
+| a  b |
+| c  d |
+
+The determinant is: **det = a·d − b·c**
+
+It represents the signed area of the parallelogram formed by the two column vectors.
 
 ---
 
