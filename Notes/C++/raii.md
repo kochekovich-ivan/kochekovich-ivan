@@ -1,6 +1,5 @@
 # RAII
 
----
 
 ## 1. Definition
 RAII is a C++ programming idiom where resource management (memory, files, locks, etc.) is tied to the lifetime of an object.  
