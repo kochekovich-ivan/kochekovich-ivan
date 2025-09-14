@@ -1,56 +1,25 @@
-# Function and Class Templates
+# Templates (Function and Class)
 
-## Purpose
-- **Templates** allow writing generic code that works with any data type.
-- Avoid code duplication for functions/classes that differ only by type.
+## What Templates Are
+- **Templates** are a way to write code once and use it with many different data types.
+- The compiler generates the actual version of the function or class for each type used.
+- Main idea: write generic code that adapts to the type automatically.
 
-## Function Template
+## Function Templates
+- Let you create functions that work with any data type.
+- The type is chosen automatically when you call the function.
+- Example in words: "one universal `add` function" that works with ints, doubles, strings — no need to write separate versions.
 
-Syntax:
+## Class Templates
+- Let you create classes that store or work with different types without rewriting the class.
+- Example in words: "one universal container class" that can hold integers, strings, or any other type.
 
-`template <typename T>`
-`T add(T a, T b)`
-`{`
-    `return a + b;`
-`}`
+## Why Templates Are Important
+- Reduce code duplication.
+- Increase code flexibility and reusability.
+- Used everywhere in the C++ Standard Template Library (STL): vectors, queues, maps.
 
-Usage:
-- add(3, 5) → works with int
-- add(3.5, 2.1) → works with double
-
-## Class Template
-
-Syntax:
-
-`template <typename T>`
-`class Box`
-`{`
-`private:`
-`    T value;`
-`public:`
-`    Box(T v) : value(v) {}`
-`    T get() { return value; }`
-`};`
-
-Usage:
-
-Box<int> b1(10);
-Box<std::string> b2("Hello");
-
-## Key Notes
-- `typename` and `class` keywords are interchangeable in template parameter list.
-- Template functions are instantiated by compiler with required types at compile time.
-- Can specify multiple type parameters:
-
-`template <typename T1, typename T2>`
-`auto multiply(T1 a, T2 b) { return a * b; }`
-
-## Benefits
-- Code reuse for multiple types.
-- Type safety (compile-time checking).
-- Foundation for STL (Standard Template Library).
-
-## Limitations
-- Template code increases compile time.
-- Compiler generates separate instantiations for each type → bigger binary.
-- Error messages can be complex.
+## Key Points
+- `typename` and `class` mean the same thing in template definitions.
+- Compiler creates a separate version of the function/class for each type you use.
+- Templates are resolved at compile time → efficient but can slow compilation and give long error messages.
