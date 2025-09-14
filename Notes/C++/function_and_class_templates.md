@@ -8,11 +8,11 @@
 
 Syntax:
 
-template <typename T>
-T add(T a, T b)
-{
-    return a + b;
-}
+`template <typename T>`
+`T add(T a, T b)`
+`{`
+    `return a + b;`
+`}`
 
 Usage:
 - add(3, 5) → works with int
@@ -22,15 +22,15 @@ Usage:
 
 Syntax:
 
-template <typename T>
-class Box
-{
-private:
-    T value;
-public:
-    Box(T v) : value(v) {}
-    T get() { return value; }
-};
+`template <typename T>`
+`class Box`
+`{`
+`private:`
+`    T value;`
+`public:`
+`    Box(T v) : value(v) {}`
+`    T get() { return value; }`
+`};`
 
 Usage:
 
@@ -42,8 +42,8 @@ Box<std::string> b2("Hello");
 - Template functions are instantiated by compiler with required types at compile time.
 - Can specify multiple type parameters:
 
-template <typename T1, typename T2>
-auto multiply(T1 a, T2 b) { return a * b; }
+`template <typename T1, typename T2>`
+`auto multiply(T1 a, T2 b) { return a * b; }`
 
 ## Benefits
 - Code reuse for multiple types.
