@@ -4,10 +4,11 @@ Concatenation is the process of joining two or more arrays along an existing axi
 
 - np.concatenate(): Joins a sequence of arrays along an existing axis.
 
-``import numpy as np
+```md
+import numpy as np
 arr1 = np.array([[1, 2], [3, 4]])
 arr2 = np.array([[5, 6]])
-concatenated_arr = np.concatenate((arr1, arr2), axis=0)``
+concatenated_arr = np.concatenate((arr1, arr2), axis=0)```
 
 This joins arr1 and arr2 along the first axis (rows), resulting in a 3x2 array.
 
