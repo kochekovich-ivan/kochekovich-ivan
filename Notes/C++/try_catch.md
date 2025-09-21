@@ -5,10 +5,10 @@ The general flow is:
 3. `catch` handles the exception and prevents program crash.
 
 ### Syntax
-
+``` C++
 #include <iostream>
 using namespace std;
-``` C++
+
 int main() {
     try {
         int a = 10, b = 0;
