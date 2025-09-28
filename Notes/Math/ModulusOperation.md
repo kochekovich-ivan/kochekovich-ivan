@@ -121,6 +121,7 @@ x ≡ 3 (mod 5)
 If p is **prime** and a is not divisible by p:
 
 a^(p−1) ≡ 1 (mod p)
+a^(p−2) ≡ a^−1 (mod p)
 
 **Example:**  
 a = 3, p = 7 → 3^6 mod 7 = 1  
