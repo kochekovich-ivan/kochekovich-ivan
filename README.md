@@ -1,7 +1,7 @@
 # Hi, I'm Ivan Kochekovych
 
  Software Engineer | MIT hopeful  
- Focus: C++ • Algorithms • Math  
+ Focus: C/C++ • Algorithms • Math  
 
 ---
 
