@@ -1,12 +1,12 @@
 # Hi, I'm Ivan Kochekovych
 
  Software Engineer | MIT hopeful  
- Focus: C++ • Algorithms • Math  
+ Focus: C/C++ • Algorithms • Math  
 
 ---
 
 ## Current Focus
-- Building projects in **C++**  
+- Building projects in **C/C++**  
 - Following a **roadmap** toward MIT  
 
 ---
